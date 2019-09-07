@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwareGroup.SenseCAP", "AwareGroup.SenseCAP\AwareGroup.SenseCAP.csproj", "{185C0B36-30BA-4519-868B-414B8CB446A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{185C0B36-30BA-4519-868B-414B8CB446A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{185C0B36-30BA-4519-868B-414B8CB446A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{185C0B36-30BA-4519-868B-414B8CB446A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{185C0B36-30BA-4519-868B-414B8CB446A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4A79E6A-188B-4147-9BD2-A2A62CAED56E}
+	EndGlobalSection
+EndGlobal
