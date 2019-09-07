@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using AwareGroup.SenseCAP.JsonConverters;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -22,14 +23,26 @@ namespace AwareGroup.SenseCAP.Models
         [JsonProperty("description")]
         public string Description { get; set; }
 
-        public DateTimeOffset DateTimeLastActivated { get; set; }
-        public DateTimeOffset DateTimeLastMessageReceived { get; set; }
-        public DateTimeOffset DateTimeManufactured { get; set; }
+
+        [JsonProperty("activate_time")]
+        [JsonConverter(typeof(EpochDateTimeOffsetJsonConverter))]
+        public DateTimeOffset TimestampLastActivated { get; set; }
+
+        [JsonProperty("latestmsg_time")]
+        [JsonConverter(typeof(EpochDateTimeOffsetJsonConverter))]
+        public DateTimeOffset TimestampLastMessageReceived { get; set; }
+
+        [JsonProperty("production_time")]
+        [JsonConverter(typeof(EpochDateTimeOffsetJsonConverter))]
+        public DateTimeOffset TimestampManufactured { get; set; }
+
 
         [JsonProperty("frequency")]
         public string Frequency { get; set; }
 
+        [JsonProperty("ver_hardware")]
         public string VersionHardware { get; set; }
+        [JsonProperty("ver_software")]
         public string VersionSoftware { get; set; }
     }
 }
