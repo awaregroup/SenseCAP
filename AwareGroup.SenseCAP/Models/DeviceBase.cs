@@ -17,7 +17,7 @@ namespace AwareGroup.SenseCAP.Models
         public string DeviceCountry { get; set; }
 
         [JsonProperty("online_status")]
-        public bool OnlineStatus { get; set; }
+        public int OnlineStatus { get; set; }
 
         [JsonProperty("description")]
         public string Description { get; set; }

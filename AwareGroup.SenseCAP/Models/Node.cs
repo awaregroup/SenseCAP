@@ -11,7 +11,7 @@ namespace AwareGroup.SenseCAP.Models
         /// True = Good, False = Bad
         /// </summary>
         [JsonProperty("battery_status")]
-        public bool BatteryStatus { get; set; }
+        public int BatteryStatus { get; set; }
 
         [JsonProperty("msg_count")]
         public int MessageCount { get; set; }
